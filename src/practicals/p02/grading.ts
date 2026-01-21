@@ -2,23 +2,24 @@
 const input = process.argv[2];
 const number = Number(input);
 
-if (Number.isNaN(number)){
+if (Number.isNaN(input)){
     console.log("Invalid input");
-    process.exit(0)
+    process.exit(1)
 }   else if (number < 0 || number > 100){
     console.log("Invalid input");
-    process.exit(0)
+    process.exit(1)
 }
-const grade:string = 'B';
+
 if (number >= 80){
-    grade = 'A';
+    console.log("Grade is A");
 }   else if (number >= 70){
-    grade = 'B';
+    console.log("Grade is B");
 }   else if (number >= 60){
-    grade = 'C';
+    console.log("Grade is C");
 }   else if (number >= 50){
-    grade = 'D';
+    console.log("Grade is D");
+}   else if (number >= 0){
+    console.log("Grade is F");
 }   else {
-    grade = 'F';
+    console.log("Invalid input");
 }
-console.log("Grade is ",grade);
