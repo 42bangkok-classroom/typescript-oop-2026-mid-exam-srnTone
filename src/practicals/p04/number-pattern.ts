@@ -9,7 +9,8 @@ if (Number.isNaN(input)){
 }
 
 for (let i=1; i <= number;i++){
-    console.log(i)
-}   for (let j = 1; j < number;j++){
+    console.log(i);
+    for (let j=0;j<number;j++){
     console.log(j);
-}
+    }
+}   

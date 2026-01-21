@@ -3,9 +3,9 @@ const input = process.argv[2];
 const number = Number(input);
 
 if (Number.isNaN(number)){
-    process.exit()
+    process.exit(1)
 }   else if (number <= 0 ){
-    process.exit()
+    process.exit(1)
 }
 
 for (let i = 1; i <= number; i++){
@@ -15,8 +15,7 @@ for (let i = 1; i <= number; i++){
     console.log("Buzz");
 }   else if (i%3==0){
     console.log("Fizz");
-}
-    else {
+}   else {
     console.log(i);
 }
 }
