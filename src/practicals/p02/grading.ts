@@ -4,20 +4,21 @@ const number = Number(input);
 
 if (Number.isNaN(number)){
     console.log("Invalid input");
-    process.exit(1)
+    process.exit(0)
 }   else if (number < 0 || number > 100){
     console.log("Invalid input");
-    process.exit(1)
+    process.exit(0)
 }
-
+const grade:string = 'B';
 if (number >= 80){
-    console.log("Grade is A");
+    grade = 'A';
 }   else if (number >= 70){
-    console.log("Grade is B");
+    grade = 'B';
 }   else if (number >= 60){
-    console.log("Grade is C");
+    grade = 'C';
 }   else if (number >= 50){
-    console.log("Grade is D");
+    grade = 'D';
 }   else {
-    console.log("Grade is F");
+    grade = 'F';
 }
+console.log("Grade is ",grade);

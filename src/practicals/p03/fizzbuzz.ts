@@ -3,9 +3,9 @@ const input = process.argv[2];
 const number = Number(input);
 
 if (Number.isNaN(number)){
-    process.exit(1)
+    process.exit()
 }   else if (number <= 0 ){
-    process.exit(1)
+    process.exit()
 }
 
 for (let i = 1; i <= number; i++){
@@ -20,4 +20,3 @@ for (let i = 1; i <= number; i++){
     console.log(i);
 }
 }
-
