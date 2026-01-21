@@ -4,10 +4,10 @@ const number = Number(input);
 
 if (Number.isNaN(input)){
     console.log("Invalid input");
-    process.exit(1)
+    process.exit()
 }   else if (number < 0 || number > 100){
     console.log("Invalid input");
-    process.exit(1)
+    process.exit()
 }
 
 if (number >= 80){
