@@ -2,12 +2,12 @@
 const input = process.argv[2];
 const number = Number(input);
 
-if (Number.isNaN(input)){
+if (Number.isNaN(number)){
     console.log("Invalid input");
-    process.exit()
+    process.exit(1)
 }   else if (number < 0 || number > 100){
     console.log("Invalid input");
-    process.exit()
+    process.exit(1)
 }
 
 if (number >= 80){
